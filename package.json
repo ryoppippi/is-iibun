@@ -7,8 +7,10 @@
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
     "@types/bun": "latest",
+    "@types/is-even": "^1.0.2",
     "bumpp": "^10.1.1",
     "gunshi": "^0.25.0",
+    "is-even": "^1.0.0",
     "prime-number": "^2.0.0",
     "publint": "^0.3.12",
     "random-item": "^4.0.1",

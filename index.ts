@@ -1,12 +1,13 @@
 import isPrime from "prime-number";
 import randomItem from "random-item";
+import isEven from "is-even";
 
 export function isIibun(number: number): string {
 	if (!isInteger(number)) {
 		return "整数を入力してください。小数点や文字列はダメです！";
 	}
 
-	if (number % 2 === 0) {
+	if (isEven(number)) {
 		return `${number}は偶数です（当たり前）`;
 	}
 
@@ -36,8 +37,8 @@ function randomOddReason(number: number): string {
 		`${number}は偶数じゃないけど、2で割ったら小数点が出るから実質偶数みたいなもんでしょ`,
 		`${number}は奇数だけど、気持ち的には偶数寄りです`,
 		`1を足したら偶数になるので、${number}は偶数です。異論は認めません。`,
-		day % 2 === 0 ? `今日は偶数の日なので、${number}も偶数扱いで` : null,
-		hour % 2 === 0 ? `今は偶数時なので、${number}も偶数扱いで` : null,
+		isEven(day) ? `今日は偶数の日なので、${number}も偶数扱いで` : null,
+		isEven(hour) ? `今は偶数時なので、${number}も偶数扱いで` : null,
 	].filter((v) => v !== null);
 
 	return randomItem(reasons);
