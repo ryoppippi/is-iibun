@@ -1,14 +1,21 @@
 {
+	"name": "is-iibun",
+	"version": "0.0.0",
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.4",
-		"@types/bun": "latest"
+		"@types/bun": "latest",
+		"bumpp": "^10.1.1"
 	},
 	"scripts": {
 		"lint": "biome check .",
-		"format": "biome check --write ."
+		"format": "biome check --write .",
+		"release": "bumpp && npm publish"
 	},
 	"dependencies": {
 		"prime-number": "^2.0.0"
 	},
-	"trustedDependencies": ["@biomejs/biome"]
+	"trustedDependencies": ["@biomejs/biome"],
+	"publishConfig": {
+		"access": "public"
+	}
 }
