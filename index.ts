@@ -2,6 +2,10 @@ import isPrime from "prime-number";
 import randomItem from "random-item";
 
 export function isIibun(number: number): string {
+	if (!isInteger(number)) {
+		return "整数を入力してください。小数点や文字列はダメです！";
+	}
+
 	if (number % 2 === 0) {
 		return `${number}は偶数です（当たり前）`;
 	}
@@ -44,4 +48,8 @@ function randomOddReason(number: number): string {
 	] as const;
 
 	return randomItem(reasons);
+}
+
+function isInteger(val: unknown): boolean {
+	return typeof val === "number" && Number.isInteger(val);
 }
