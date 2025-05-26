@@ -56,6 +56,10 @@ npx is-iibun 13
 
 プルリクエストや Issue の報告を歓迎します！より創造的な偶数判定ロジックのアイデアがあれば、ぜひご提案ください。
 
+## 関連
+- [is-even](https://www.npmjs.com/package/is-even)
+- [is-odd](https://www.npmjs.com/package/is-odd)
+
 ## ライセンス
 
 MIT
