@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Blue → Purple gradient -->
+    <linearGradient id="grad23" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2196f3"/>
+      <stop offset="100%" stop-color="#9c27b0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Speech‑bubble outline -->
+  <circle cx="300" cy="260" r="180" fill="none" stroke="url(#grad23)" stroke-width="24" stroke-linecap="round"/>
+  <path d="M380 370 L520 460 L330 390" fill="none" stroke="url(#grad23)"
+        stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- “23” -->
+  <text x="300" y="290" text-anchor="middle" dominant-baseline="middle"
+        font-family="Poppins, 'Helvetica Neue', Arial, sans-serif"
+        font-size="160" font-weight="700" fill="url(#grad23)">23</text>
+
+  <!-- “is-iibun..” -->
+  <text x="300" y="520" text-anchor="middle"
+        font-family="Poppins, 'Helvetica Neue', Arial, sans-serif"
+        font-size="96" font-weight="700" fill="#2d3748">is-iibun..</text>
+</svg>
