@@ -21,16 +21,16 @@ function iibunForOdd(number: number): string {
 		return `現在奇数時なので、${number}は奇数の呪いにかかってます`;
 	}
 
+	if (number === 1) {
+		return "1は最初の数だから、偶数の始祖みたいなもんです";
+	}
+
 	if (isPrime(number)) {
 		return `${number}は素数なので、偶数奇数の概念を超越してます`;
 	}
 
 	if (number < 0) {
 		return `${number}は負の数なので、マイナス偶数ということで`;
-	}
-
-	if (number === 1) {
-		return "1は最初の数だから、偶数の始祖みたいなもんです";
 	}
 
 	return randomOddReason(number);
