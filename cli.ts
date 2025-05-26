@@ -9,13 +9,12 @@ const command = define({
 		number: {
 			type: "positional",
 			description: "Integer",
-			required: true,
 		},
 	},
 	run(ctx) {
 		const { number } = ctx.values;
 		// biome-ignore lint/suspicious/noConsole: <explanation>
-		console.log(isIibun(number as unknown as number));
+		console.log(isIibun(Number.parseInt(number ?? "", 10)));
 	},
 });
 
