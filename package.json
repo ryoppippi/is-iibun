@@ -5,16 +5,26 @@
 		"@biomejs/biome": "^1.9.4",
 		"@types/bun": "latest",
 		"bumpp": "^10.1.1",
+		"prime-number": "^2.0.0",
 		"random-item": "^4.0.1",
-		"prime-number": "^2.0.0"
+		"tsdown": "^0.12.3",
+		"typescript": "^5.8.3"
 	},
 	"scripts": {
 		"lint": "biome check .",
 		"format": "biome check --write .",
+		"build": "tsdown ./index.ts --sourcemap --dts --exports",
 		"release": "bumpp && npm publish"
 	},
 	"trustedDependencies": ["@biomejs/biome"],
 	"publishConfig": {
 		"access": "public"
+	},
+	"main": "./dist/index.mjs",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.mts",
+	"exports": {
+		".": "./dist/index.mjs",
+		"./package.json": "./package.json"
 	}
 }
