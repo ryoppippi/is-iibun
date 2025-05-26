@@ -36,8 +36,8 @@ function randomOddReason(number: number): string {
 		`${number}は偶数じゃないけど、2で割ったら小数点が出るから実質偶数みたいなもんでしょ`,
 		`${number}は奇数だけど、気持ち的には偶数寄りです`,
 		`1を足したら偶数になるので、${number}は偶数です。異論は認めません。`,
-		day % 2 ? `今日は奇数の日なので、${number}も奇数扱いで` : null,
-		hour % 2 ? `今は奇数時なので、${number}も奇数扱いで` : null,
+		day % 2 === 0 ? `今日は偶数の日なので、${number}も偶数扱いで` : null,
+		hour % 2 === 0 ? `今は偶数時なので、${number}も偶数扱いで` : null,
 	].filter((v) => v !== null);
 
 	return randomItem(reasons);
