@@ -4,15 +4,14 @@
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.4",
 		"@types/bun": "latest",
-		"bumpp": "^10.1.1"
+		"bumpp": "^10.1.1",
+		"random-item": "^4.0.1",
+		"prime-number": "^2.0.0"
 	},
 	"scripts": {
 		"lint": "biome check .",
 		"format": "biome check --write .",
 		"release": "bumpp && npm publish"
-	},
-	"dependencies": {
-		"prime-number": "^2.0.0"
 	},
 	"trustedDependencies": ["@biomejs/biome"],
 	"publishConfig": {

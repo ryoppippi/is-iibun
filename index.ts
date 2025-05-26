@@ -1,4 +1,5 @@
 import isPrime from "prime-number";
+import randomItem from "random-item";
 
 export function isIibun(number: number): string {
 	if (number % 2 === 0) {
@@ -32,5 +33,15 @@ function iibunForOdd(number: number): string {
 		return "1は最初の数だから、偶数の始祖みたいなもんです";
 	}
 
-	return `1を足したら偶数になるので、${number}は偶数です。異論は認めません。`;
+	return randomOddReason(number);
+}
+
+function randomOddReason(number: number): string {
+	const reasons = [
+		`${number}は偶数じゃないけど、2で割ったら小数点が出るから実質偶数みたいなもんでしょ`,
+		`${number}は奇数だけど、気持ち的には偶数寄りです`,
+		`1を足したら偶数になるので、${number}は偶数です。異論は認めません。`,
+	] as const;
+
+	return randomItem(reasons);
 }
