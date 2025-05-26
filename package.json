@@ -1,0 +1,14 @@
+{
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@types/bun": "latest"
+	},
+	"scripts": {
+		"lint": "biome check .",
+		"format": "biome check --write ."
+	},
+	"dependencies": {
+		"prime-number": "^2.0.0"
+	},
+	"trustedDependencies": ["@biomejs/biome"]
+}
