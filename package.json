@@ -14,6 +14,7 @@
 		"lint": "biome check .",
 		"format": "biome check --write .",
 		"build": "tsdown ./index.ts --sourcemap --dts --exports",
+		"prepack": "npm run build",
 		"release": "bumpp && npm publish"
 	},
 	"trustedDependencies": ["@biomejs/biome"],
