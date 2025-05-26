@@ -14,17 +14,6 @@ export function isIibun(number: number): string {
 }
 
 function iibunForOdd(number: number): string {
-	const day = new Date().getDay();
-	const hour = new Date().getHours();
-
-	if (day % 2 !== 0) {
-		return `今日は奇数の日なので、${number}も奇数扱いで`;
-	}
-
-	if (hour % 2 !== 0) {
-		return `現在奇数時なので、${number}は奇数の呪いにかかってます`;
-	}
-
 	if (number === 1) {
 		return "1は最初の数だから、偶数の始祖みたいなもんです";
 	}
@@ -41,11 +30,15 @@ function iibunForOdd(number: number): string {
 }
 
 function randomOddReason(number: number): string {
+	const day = new Date().getDay();
+	const hour = new Date().getHours();
 	const reasons = [
 		`${number}は偶数じゃないけど、2で割ったら小数点が出るから実質偶数みたいなもんでしょ`,
 		`${number}は奇数だけど、気持ち的には偶数寄りです`,
 		`1を足したら偶数になるので、${number}は偶数です。異論は認めません。`,
-	] as const;
+		day % 2 ? `今日は奇数の日なので、${number}も奇数扱いで` : null,
+		hour % 2 ? `今は奇数時なので、${number}も奇数扱いで` : null,
+	].filter((v) => v !== null);
 
 	return randomItem(reasons);
 }
