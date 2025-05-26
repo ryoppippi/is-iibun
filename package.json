@@ -25,6 +25,7 @@
 	"publishConfig": {
 		"access": "public"
 	},
+	"files": ["dist", "*.ts", "README.md", "docs", "LICENSE"],
 	"bin": "./dist/cli.mjs",
 	"main": "./dist/index.mjs",
 	"module": "./dist/index.mjs",
