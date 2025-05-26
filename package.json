@@ -10,6 +10,7 @@
 		"bumpp": "^10.1.1",
 		"gunshi": "^0.25.0",
 		"prime-number": "^2.0.0",
+		"publint": "^0.3.12",
 		"random-item": "^4.0.1",
 		"tsdown": "^0.12.3",
 		"typescript": "^5.8.3"
@@ -17,7 +18,7 @@
 	"scripts": {
 		"lint": "biome check .",
 		"format": "biome check --write .",
-		"build": "tsdown ./*.ts --sourcemap --dts --exports",
+		"build": "tsdown ./*.ts --sourcemap --dts --exports --publint",
 		"prepack": "npm run build",
 		"release": "bumpp && npm publish"
 	},
