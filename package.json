@@ -1,7 +1,7 @@
 {
 	"name": "is-iibun",
 	"description": "Check if a number is Even with iibun",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"repository": "ryoppippi/is-iibun",
 	"funding": "https://github.com/ryoppippi/is-iibun?sponsor=1",
 	"dependencies": {
