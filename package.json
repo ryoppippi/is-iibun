@@ -8,7 +8,7 @@
 		"is-even": "^1.0.0",
 		"random-item": "^4.0.1",
 		"prime-number": "^2.0.0",
-		"gunshi": "^0.27.5"
+		"gunshi": "^0.27.6"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.3.14",
