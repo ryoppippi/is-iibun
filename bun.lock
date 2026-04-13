@@ -4,7 +4,7 @@
   "workspaces": {
     "": {
       "dependencies": {
-        "gunshi": "^0.29.3",
+        "gunshi": "^0.29.4",
         "is-even": "^1.0.0",
         "prime-number": "^2.0.0",
         "random-item": "^4.0.1",
@@ -144,7 +144,7 @@
 
     "get-tsconfig": ["get-tsconfig@4.13.7", "", { "dependencies": { "resolve-pkg-maps": "^1.0.0" } }, "sha512-7tN6rFgBlMgpBML5j8typ92BKFi2sFQvIdpAqLA2beia5avZDrMs0FLZiM5etShWq5irVyGcGMEA1jcDaK7A/Q=="],
 
-    "gunshi": ["gunshi@0.29.3", "", {}, "sha512-0E2ifZq5aJs2TzX3aCdkON72Mg4FjTSJDjhmaVw3OgQAdZNeyS3EfA4FybHS3NP5YxqiMj43NFcu0ezccJPGzw=="],
+    "gunshi": ["gunshi@0.29.4", "", {}, "sha512-Dstvn5GzwR2OpYKJBjYY2YHs31J4d3ht0uKQCex2bLsOD63PmQZX59rYfk5wFhG95jmrVcwbyBzBnolkVDS5kg=="],
 
     "hookable": ["hookable@6.1.0", "", {}, "sha512-ZoKZSJgu8voGK2geJS+6YtYjvIzu9AOM/KZXsBxr83uhLL++e9pEv/dlgwgy3dvHg06kTz6JOh1hk3C8Ceiymw=="],
 
