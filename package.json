@@ -15,7 +15,7 @@
 		"@types/bun": "latest",
 		"@types/is-even": "^1.0.2",
 		"bumpp": "^11.1.0",
-		"publint": "^0.3.20",
+		"publint": "^0.3.21",
 		"tsdown": "^0.22.0",
 		"typescript": "^6.0.3"
 	},
