@@ -16,7 +16,7 @@
 		"@types/is-even": "^1.0.2",
 		"bumpp": "^11.1.0",
 		"publint": "^0.3.22",
-		"tsdown": "^0.22.9",
+		"tsdown": "^0.22.14",
 		"typescript": "^7.0.2"
 	},
 	"scripts": {
