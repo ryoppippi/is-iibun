@@ -4,7 +4,7 @@
   "workspaces": {
     "": {
       "dependencies": {
-        "gunshi": "^0.37.0",
+        "gunshi": "^0.37.1",
         "is-even": "^1.0.0",
         "prime-number": "^2.0.0",
         "random-item": "^4.0.1",
