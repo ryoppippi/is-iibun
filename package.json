@@ -14,7 +14,7 @@
 		"@biomejs/biome": "^2.5.7",
 		"@types/bun": "latest",
 		"@types/is-even": "^1.0.2",
-		"bumpp": "^12.1.1",
+		"bumpp": "^12.2.0",
 		"publint": "^0.3.23",
 		"tsdown": "^0.22.14",
 		"typescript": "^7.0.2"
