@@ -11,7 +11,7 @@
 		"gunshi": "^0.37.2"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^2.5.13",
+		"@biomejs/biome": "^2.5.14",
 		"@types/bun": "latest",
 		"@types/is-even": "^1.0.2",
 		"bumpp": "^12.3.0",
