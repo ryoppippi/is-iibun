@@ -14,7 +14,7 @@
         "@types/bun": "latest",
         "@types/is-even": "^1.0.2",
         "bumpp": "^12.3.0",
-        "publint": "^0.3.24",
+        "publint": "^0.3.25",
         "tsdown": "^0.23.0",
         "typescript": "^7.0.2",
       },
@@ -226,7 +226,7 @@
 
     "prime-number": ["prime-number@2.0.0", "", {}, "sha512-tpgIQyXwq78sjXrb+zRY6mHkkdWp1ACBVhj4Zf4dqP+yvznU53rGZA1cCoJzbdltD28DuqS05GzybSwLlCfwXw=="],
 
-    "publint": ["publint@0.3.24", "", { "dependencies": { "@publint/pack": "^0.1.7", "package-manager-detector": "^1.8.0", "picocolors": "^1.1.1", "sade": "^1.8.1" }, "bin": { "publint": "./src/cli.js" } }, "sha512-9zS56KrKBoqi5Qt8h92uMP8TTM9AYZSgnmCo4u2priMqkOZvQnTsziZ2p5LJ2ywbYkAjoCDp2jda9u4cgFefIw=="],
+    "publint": ["publint@0.3.25", "", { "dependencies": { "@publint/pack": "^0.1.7", "package-manager-detector": "^1.8.0", "picocolors": "^1.1.1", "sade": "^1.8.1" }, "bin": { "publint": "./src/cli.js" } }, "sha512-WMMbn/d7JqRlfXQL/JUI4n5skC8cJ5WVr8/wT5mmiYWkUdENkZr1I5rgs2+dQPVRgoJd+JRYtB46MTsuDylw9g=="],
 
     "quansync": ["quansync@1.0.0", "", {}, "sha512-5xZacEEufv3HSTPQuchrvV6soaiACMFnq1H8wkVioctoH3TRha9Sz66lOxRwPK/qZj7HPiSveih9yAyh98gvqA=="],
 
